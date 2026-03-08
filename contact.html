@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact ICT - University of Mpumalanga</title>
+  <meta name="description" content="Contact details, campus addresses, and map for the ICT department at UMP.">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="container header-container">
+      <div class="logo">
+        <a href="index.html" aria-label="UMP ICT Home">
+          <img src="assets/images/ump-logo.svg" alt="University of Mpumalanga Logo" width="150" height="50">
+        </a>
+      </div>
+      <button class="hamburger" aria-label="Menu" aria-expanded="false" aria-controls="primary-navigation">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
+      <nav id="primary-navigation" class="primary-nav" aria-label="Main">
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About ICT</a></li>
+          <li><a href="programs.html">Programs</a></li>
+          <li><a href="community.html">Community</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="contact.html" aria-current="page">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="page-layout">
+    <aside class="instruction-panel" aria-label="Page instructions">
+      <button class="panel-toggle" aria-expanded="false" aria-controls="panel-content">Contact info</button>
+      <div id="panel-content" class="panel-content">
+        <h2>Get in touch</h2>
+        <p>Find our campuses, phone numbers, and email addresses. The map is interactive.</p>
+      </div>
+    </aside>
+
+    <main id="main-content" class="main-content">
+      <h1>Contact the ICT Department</h1>
+
+      <div class="contact-grid">
+        <div class="contact-details">
+          <h2>Mbombela Campus</h2>
+          <address>
+            <p>7 R40 Road, Mbombela, 1200</p>
+            <p>Tel: <a href="tel:+27123456789">+27 12 345 6789</a></p>
+            <p>Email: <a href="mailto:ict@ump.ac.za">ict@ump.ac.za</a></p>
+          </address>
+
+          <h2>Siyabuswa Campus</h2>
+          <address>
+            <p>Stand 610, Siyabuswa, 0472</p>
+            <p>Tel: <a href="tel:+27139876543">+27 13 987 6543</a></p>
+          </address>
+
+          <h2>Support</h2>
+          <p>Student Help Desk: <a href="mailto:helpdesk@ump.ac.za">helpdesk@ump.ac.za</a></p>
+          <p>Accessibility inquiries: <a href="mailto:accessibility@ump.ac.za">accessibility@ump.ac.za</a></p>
+        </div>
+
+        <div class="map-container">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3585.123456789!2d30.9876543!3d-25.1234567!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjXCsDA3JzI0LjQiUyAzMMKwNTknMTUuNiJF!5e0!3m2!1sen!2sza!4v1234567890"
+            width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+            title="Google Map of Mbombela Campus"></iframe>
+          <p class="map-note">Map showing approximate location of Mbombela campus.</p>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <p>&copy; 2026 University of Mpumalanga – ICT Department. All rights reserved.</p>
+      <nav aria-label="Footer">
+        <ul class="footer-links">
+          <li><a href="privacy.html">Privacy</a></li>
+          <li><a href="accessibility.html">Accessibility</a></li>
+          <li><a href="sitemap.xml">Sitemap</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>

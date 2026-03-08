@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Events - ICT at University of Mpumalanga</title>
+  <meta name="description" content="Upcoming ICT workshops, seminars, and digital transformation events at UMP.">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="container header-container">
+      <div class="logo">
+        <a href="index.html" aria-label="UMP ICT Home">
+          <img src="assets/images/ump-logo.svg" alt="University of Mpumalanga Logo" width="150" height="50">
+        </a>
+      </div>
+      <button class="hamburger" aria-label="Menu" aria-expanded="false" aria-controls="primary-navigation">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
+      <nav id="primary-navigation" class="primary-nav" aria-label="Main">
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About ICT</a></li>
+          <li><a href="programs.html">Programs</a></li>
+          <li><a href="community.html">Community</a></li>
+          <li><a href="events.html" aria-current="page">Events</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="page-layout">
+    <aside class="instruction-panel" aria-label="Page instructions">
+      <button class="panel-toggle" aria-expanded="false" aria-controls="panel-content">Events guide</button>
+      <div id="panel-content" class="panel-content">
+        <h2>Filter events</h2>
+        <p>Use the filter to view events by month. Click an event for details.</p>
+      </div>
+    </aside>
+
+    <main id="main-content" class="main-content">
+      <h1>ICT Events Calendar</h1>
+
+      <!-- Filter controls -->
+      <div class="filter-controls">
+        <label for="month-filter">Filter by month:</label>
+        <select id="month-filter" aria-label="Filter events by month">
+          <option value="all">All months</option>
+          <option value="March">March 2026</option>
+          <option value="April">April 2026</option>
+          <option value="May">May 2026</option>
+        </select>
+      </div>
+
+      <div class="events-list" id="events-list">
+        <!-- Events populated by JS, fallback static list with noscript -->
+        <div class="event-item" data-month="March">
+          <h3><button class="event-title" aria-expanded="false" aria-controls="event1-details">ICT Industry Networking Breakfast</button></h3>
+          <div id="event1-details" class="event-details" hidden>
+            <p><strong>Date:</strong> 15 March 2026, 09:00-12:00</p>
+            <p><strong>Location:</strong> Mbombela Campus, Conference Hall</p>
+            <p>Meet potential employers and alumni in the tech sector.</p>
+          </div>
+        </div>
+        <div class="event-item" data-month="March">
+          <h3><button class="event-title" aria-expanded="false" aria-controls="event2-details">Women in Tech Panel Discussion</button></h3>
+          <div id="event2-details" class="event-details" hidden>
+            <p><strong>Date:</strong> 22 March 2026, 14:00-16:00</p>
+            <p><strong>Location:</strong> Online (Zoom)</p>
+            <p>Celebrating women leaders in ICT.</p>
+          </div>
+        </div>
+        <div class="event-item" data-month="April">
+          <h3><button class="event-title" aria-expanded="false" aria-controls="event3-details">CodeFest 2026: 24‑hour Hackathon</button></h3>
+          <div id="event3-details" class="event-details" hidden>
+            <p><strong>Date:</strong> 5-6 April 2026</p>
+            <p><strong>Location:</strong> Siyabuswa Campus, Lab 2</p>
+            <p>Teams compete to build innovative solutions for local challenges.</p>
+          </div>
+        </div>
+        <div class="event-item" data-month="April">
+          <h3><button class="event-title" aria-expanded="false" aria-controls="event4-details">Workshop: Introduction to Data Science</button></h3>
+          <div id="event4-details" class="event-details" hidden>
+            <p><strong>Date:</strong> 12 April 2026, 10:00-13:00</p>
+            <p><strong>Location:</strong> Mbombela Campus, Lab 3</p>
+            <p>Hands-on session with Python.</p>
+          </div>
+        </div>
+        <div class="event-item" data-month="May">
+          <h3><button class="event-title" aria-expanded="false" aria-controls="event5-details">Digital Transformation Seminar</button></h3>
+          <div id="event5-details" class="event-details" hidden>
+            <p><strong>Date:</strong> 10 May 2026, 11:00-15:00</p>
+            <p><strong>Location:</strong> Mbombela Campus, Auditorium</p>
+            <p>Keynote by industry experts on e‑government and smart communities.</p>
+          </div>
+        </div>
+        <div class="event-item" data-month="May">
+          <h3><button class="event-title" aria-expanded="false" aria-controls="event6-details">Cybersecurity Awareness Workshop</button></h3>
+          <div id="event6-details" class="event-details" hidden>
+            <p><strong>Date:</strong> 24 May 2026, 09:00-12:00</p>
+            <p><strong>Location:</strong> Online</p>
+            <p>Protect yourself and your data online.</p>
+          </div>
+        </div>
+      </div>
+      <noscript>
+        <p>JavaScript disabled: view events above (filter requires JS).</p>
+      </noscript>
+    </main>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <p>&copy; 2026 University of Mpumalanga – ICT Department. All rights reserved.</p>
+      <nav aria-label="Footer">
+        <ul class="footer-links">
+          <li><a href="privacy.html">Privacy</a></li>
+          <li><a href="accessibility.html">Accessibility</a></li>
+          <li><a href="sitemap.xml">Sitemap</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ICT Community - University of Mpumalanga</title>
+  <meta name="description" content="Join student clubs, hackathons, volunteering, and access resources like labs and Wi-Fi at UMP.">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="container header-container">
+      <div class="logo">
+        <a href="index.html" aria-label="UMP ICT Home">
+          <img src="assets/images/ump-logo.svg" alt="University of Mpumalanga Logo" width="150" height="50">
+        </a>
+      </div>
+      <button class="hamburger" aria-label="Menu" aria-expanded="false" aria-controls="primary-navigation">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
+      <nav id="primary-navigation" class="primary-nav" aria-label="Main">
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About ICT</a></li>
+          <li><a href="programs.html">Programs</a></li>
+          <li><a href="community.html" aria-current="page">Community</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="page-layout">
+    <aside class="instruction-panel" aria-label="Page instructions">
+      <button class="panel-toggle" aria-expanded="false" aria-controls="panel-content">Community guide</button>
+      <div id="panel-content" class="panel-content">
+        <h2>Get involved</h2>
+        <p>Explore clubs, projects, and volunteer opportunities. Fill out the form to express interest (client-side validation).</p>
+      </div>
+    </aside>
+
+    <main id="main-content" class="main-content">
+      <h1>ICT Community & Student Life</h1>
+
+      <section class="clubs">
+        <h2>Student Clubs</h2>
+        <div class="card-grid">
+          <div class="card">
+            <img src="assets/images/club1.svg" alt="UMP DevClub members coding together" loading="lazy">
+            <h3>UMP DevClub</h3>
+            <p>Weekly coding sessions, hackathons, and guest talks from industry professionals. Open to all levels.</p>
+          </div>
+          <div class="card">
+            <img src="assets/images/club2.svg" alt="CyberSec students at a workshop" loading="lazy">
+            <h3>CyberSec Society</h3>
+            <p>Explore cybersecurity through workshops, capture-the-flag events, and networking.</p>
+          </div>
+          <div class="card">
+            <h3>Women in Tech</h3>
+            <p>Supporting and empowering women pursuing ICT careers through mentorship and events.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="volunteering">
+        <h2>Volunteering & Projects</h2>
+        <p>Students contribute to community projects such as teaching coding at local schools, developing apps for non-profits, and assisting with digital literacy campaigns.</p>
+        <ul>
+          <li><strong>Code4Change:</strong> Teach basic programming at Mbombela high schools.</li>
+          <li><strong>HealthApp:</strong> Build a clinic appointment system with local healthcare providers.</li>
+          <li><strong>AgriTech:</strong> IoT solutions for small-scale farmers (ongoing research). <!-- Source: UMP Digital Transformation initiative --></li>
+        </ul>
+      </section>
+
+      <section class="resources">
+        <h2>Resources</h2>
+        <ul>
+          <li>Computer labs (Mbombela and Siyabuswa) with modern workstations.</li>
+          <li>Campus-wide Wi-Fi (eduroam).</li>
+          <li>Student Help Desk for technical support.</li>
+        </ul>
+      </section>
+
+      <section class="join-form">
+        <h2>How to Join</h2>
+        <p>Interested in any club or project? Fill out the form below and we’ll get back to you (this form sends an email via your default client).</p>
+        <form id="community-interest" action="#" method="post" novalidate>
+          <div class="form-group">
+            <label for="name">Name *</label>
+            <input type="text" id="name" name="name" required aria-required="true">
+          </div>
+          <div class="form-group">
+            <label for="email">Email *</label>
+            <input type="email" id="email" name="email" required aria-required="true">
+          </div>
+          <div class="form-group">
+            <label for="interest">I'm interested in:</label>
+            <select id="interest" name="interest">
+              <option value="devclub">DevClub</option>
+              <option value="cybersec">CyberSec Society</option>
+              <option value="womenintech">Women in Tech</option>
+              <option value="volunteer">Volunteering</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message">Message (optional)</label>
+            <textarea id="message" name="message" rows="4"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Send via email</button>
+          <p class="form-note">(Form uses mailto: – no data is stored)</p>
+        </form>
+      </section>
+    </main>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <p>&copy; 2026 University of Mpumalanga – ICT Department. All rights reserved.</p>
+      <nav aria-label="Footer">
+        <ul class="footer-links">
+          <li><a href="privacy.html">Privacy</a></li>
+          <li><a href="accessibility.html">Accessibility</a></li>
+          <li><a href="sitemap.xml">Sitemap</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>

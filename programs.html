@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ICT Programs - University of Mpumalanga</title>
+  <meta name="description" content="Explore undergraduate and postgraduate ICT programmes at UMP: BICT, Diplomas, Certificates, and more.">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="container header-container">
+      <div class="logo">
+        <a href="index.html" aria-label="UMP ICT Home">
+          <img src="assets/images/ump-logo.svg" alt="University of Mpumalanga Logo" width="150" height="50">
+        </a>
+      </div>
+      <button class="hamburger" aria-label="Menu" aria-expanded="false" aria-controls="primary-navigation">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
+      <nav id="primary-navigation" class="primary-nav" aria-label="Main">
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About ICT</a></li>
+          <li><a href="programs.html" aria-current="page">Programs</a></li>
+          <li><a href="community.html">Community</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="page-layout">
+    <aside class="instruction-panel" aria-label="Page instructions">
+      <button class="panel-toggle" aria-expanded="false" aria-controls="panel-content">Programs guide</button>
+      <div id="panel-content" class="panel-content">
+        <h2>Programs at a glance</h2>
+        <p>Use the tabs to filter by programme level. Click a card for more details (modal). You can also search programmes below.</p>
+      </div>
+    </aside>
+
+    <main id="main-content" class="main-content">
+      <h1>ICT Programmes</h1>
+
+      <!-- Client-side search -->
+      <div class="search-bar">
+        <label for="program-search" class="visually-hidden">Search programmes</label>
+        <input type="text" id="program-search" placeholder="Search programmes..." aria-label="Search programmes">
+      </div>
+
+      <!-- Tabs for categories (JS enhanced) -->
+      <div class="tabs" role="tablist" aria-label="Programme categories">
+        <button id="tab-ug" class="tab active" role="tab" aria-selected="true" aria-controls="panel-ug">Undergraduate</button>
+        <button id="tab-pg" class="tab" role="tab" aria-selected="false" aria-controls="panel-pg">Postgraduate</button>
+        <button id="tab-sc" class="tab" role="tab" aria-selected="false" aria-controls="panel-sc">Short Courses</button>
+      </div>
+
+      <!-- Tab panels -->
+      <div id="panel-ug" class="tab-panel active" role="tabpanel" aria-labelledby="tab-ug">
+        <div class="card-grid" data-category="ug">
+          <div class="card program-card" data-program="Bachelor of ICT" data-duration="3 years" data-contact="bict@ump.ac.za">
+            <h3>Bachelor of ICT (BICT)</h3>
+            <p>Comprehensive degree covering software development, networking, and information systems.</p>
+            <p><strong>Duration:</strong> 3 years</p>
+            <p><strong>Contact:</strong> <a href="mailto:bict@ump.ac.za">bict@ump.ac.za</a></p>
+            <button class="btn btn-small view-details" data-program="bict">View details</button>
+          </div>
+          <div class="card program-card" data-program="Diploma in ICT in Applications Development" data-duration="3 years" data-contact="ditad@ump.ac.za">
+            <h3>Diploma in ICT in Applications Development</h3>
+            <p>Focus on programming, mobile app development, and software engineering.</p>
+            <p><strong>Duration:</strong> 3 years</p>
+            <p><strong>Contact:</strong> <a href="mailto:ditad@ump.ac.za">ditad@ump.ac.za</a></p>
+            <button class="btn btn-small view-details" data-program="ditad">View details</button>
+          </div>
+          <div class="card program-card" data-program="Higher Certificate in IT User Support" data-duration="1 year" data-contact="usersupport@ump.ac.za">
+            <h3>Higher Certificate in IT User Support</h3>
+            <p>Entry-level certification for IT support technicians.</p>
+            <p><strong>Duration:</strong> 1 year</p>
+            <p><strong>Contact:</strong> <a href="mailto:usersupport@ump.ac.za">usersupport@ump.ac.za</a></p>
+            <button class="btn btn-small view-details" data-program="hcit">View details</button>
+          </div>
+        </div>
+      </div>
+
+      <div id="panel-pg" class="tab-panel" role="tabpanel" aria-labelledby="tab-pg" hidden>
+        <div class="card-grid" data-category="pg">
+          <div class="card program-card" data-program="Advanced Diploma in ICT" data-duration="1 year" data-contact="advdip@ump.ac.za">
+            <h3>Advanced Diploma in ICT</h3>
+            <p>Deepen your knowledge in specialised ICT areas.</p>
+            <p><strong>Duration:</strong> 1 year</p>
+            <p><strong>Contact:</strong> <a href="mailto:advdip@ump.ac.za">advdip@ump.ac.za</a></p>
+            <button class="btn btn-small view-details" data-program="advdip">View details</button>
+          </div>
+          <div class="card program-card" data-program="Postgraduate Diploma in ICT" data-duration="1 year" data-contact="pgdip@ump.ac.za">
+            <h3>Postgraduate Diploma in ICT</h3>
+            <p>Research-oriented programme for graduates.</p>
+            <p><strong>Duration:</strong> 1 year</p>
+            <p><strong>Contact:</strong> <a href="mailto:pgdip@ump.ac.za">pgdip@ump.ac.za</a></p>
+            <button class="btn btn-small view-details" data-program="pgdip">View details</button>
+          </div>
+        </div>
+      </div>
+
+      <div id="panel-sc" class="tab-panel" role="tabpanel" aria-labelledby="tab-sc" hidden>
+        <div class="card-grid" data-category="sc">
+          <div class="card program-card" data-program="Data Science Short Course" data-duration="6 weeks" data-contact="shortcourses@ump.ac.za">
+            <h3>Data Science for Beginners</h3>
+            <p>Intro to Python, data analysis, and visualisation.</p>
+            <p><strong>Duration:</strong> 6 weeks</p>
+            <p><strong>Contact:</strong> <a href="mailto:shortcourses@ump.ac.za">shortcourses@ump.ac.za</a></p>
+            <button class="btn btn-small view-details" data-program="datascience">View details</button>
+          </div>
+          <div class="card program-card" data-program="Cybersecurity Awareness" data-duration="4 weeks" data-contact="shortcourses@ump.ac.za">
+            <h3>Cybersecurity Awareness</h3>
+            <p>Essential security practices for individuals and businesses.</p>
+            <p><strong>Duration:</strong> 4 weeks</p>
+            <p><strong>Contact:</strong> <a href="mailto:shortcourses@ump.ac.za">shortcourses@ump.ac.za</a></p>
+            <button class="btn btn-small view-details" data-program="cyber">View details</button>
+          </div>
+        </div>
+      </div>
+
+      <noscript>
+        <p>JavaScript disabled: programme details available by email.</p>
+      </noscript>
+
+      <!-- Modal for program details (hidden by default) -->
+      <div class="modal" id="program-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" hidden>
+        <div class="modal-overlay" tabindex="-1"></div>
+        <div class="modal-content">
+          <button class="modal-close" aria-label="Close modal">&times;</button>
+          <h2 id="modal-title">Programme Details</h2>
+          <div id="modal-body"></div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <p>&copy; 2026 University of Mpumalanga – ICT Department. All rights reserved.</p>
+      <nav aria-label="Footer">
+        <ul class="footer-links">
+          <li><a href="privacy.html">Privacy</a></li>
+          <li><a href="accessibility.html">Accessibility</a></li>
+          <li><a href="sitemap.xml">Sitemap</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>
